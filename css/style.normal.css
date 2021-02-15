@@ -425,6 +425,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -435,7 +438,7 @@ template {
 
 .menu__telephone {
   color: #e3b873;
-  margin-right: 45px;
+  margin-right: 38px;
 }
 
 .button {
@@ -449,11 +452,11 @@ template {
   font-size: 11px;
   text-transform: uppercase;
   border: none;
-  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
 }
 
 .button:hover {
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   cursor: pointer;
 }
 
@@ -463,6 +466,9 @@ template {
   width: 200px;
   height: 50px;
   margin-left: 20px;
+}
+
+.button-transparent::hover {
   -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
@@ -480,10 +486,13 @@ template {
 .button-item {
   width: 228px;
   height: 54px;
-  -webkit-box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
-  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
   font-family: 'YesevaOne';
   font-size: 18px;
+}
+
+.button-item::hover {
+  -webkit-box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
 }
 
 .promo {
@@ -943,6 +952,32 @@ template {
   margin-left: -25px;
   line-height: 26.6px;
   color: #959595;
+}
+
+.repairs__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #e3b873;
+  color: #ffffff;
+  border-radius: 2px;
+  font-family: 'NunitoSans-Italic';
+  text-transform: uppercase;
+  width: 228px;
+  height: 54px;
+  font-family: 'YesevaOne';
+  font-size: 18px;
+}
+
+.repairs__price::hover {
+  -webkit-box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
 }
 
 .advantages {
@@ -1598,9 +1633,13 @@ template {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .container {
     padding: 0 20px;
+  }
+  .promo__wrapper {
+    max-width: 991px;
+    text-align: center;
   }
   .menu {
     display: -webkit-box;
@@ -1940,6 +1979,7 @@ template {
     padding: 0;
     min-height: 700px;
     padding: 160px 20px;
+    max-width: 100%;
   }
   .questions__wrap {
     -webkit-box-orient: vertical;
