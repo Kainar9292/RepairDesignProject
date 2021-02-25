@@ -1715,7 +1715,7 @@ template {
     margin: 35px 0 75px 0;
   }
   .portfolio__pictures {
-    margin: auto;
+    /* margin: auto; */
     margin-bottom: 36px;
   }
   .portfolio__subtitle {

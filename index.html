@@ -65,9 +65,9 @@
         <div class="container">
             <div class="portfolio__tabs">
                 <ul class="portfolio__menu">
-                    <li class="porfolio__item"><a class="portfolio__link active-underline" href="#">Rostov-on-Don, Admiral</a></li>
-                    <li class="porfolio__item"><a class="portfolio__link" href="#">Sochi Thieves</a></li>
-                    <li class="porfolio__item"><a class="portfolio__link" href="#">Rostov-on-Don Patriotic</a></li>
+                    <li class="porfolio__item"><a class="portfolio__link active-underline" data-slide-to = "1" href="#">Rostov-on-Don, Admiral</a></li>
+                    <li class="porfolio__item"><a class="portfolio__link" data-slide-to = "2" href="#">Sochi Thieves</a></li>
+                    <li class="porfolio__item"><a class="portfolio__link" data-slide-to = "3" href="#">Rostov-on-Don Patriotic</a></li>
                 </ul>
             </div>
             <div class="portfolio__wrapper">
@@ -81,41 +81,42 @@
                     <div class="portfolio__pictures">
                         <div class="portfolio__inner">
                             <div class="portfolio__item">
-                                <img src="img/slider-1.jpg" alt="slide-1">
+                                <img src="img/slider-1.png" alt="slide-1">
                             </div>
                             <div class="portfolio__item">
-                                <img src="img/slider-1.jpg" alt="slide-1">
+                                <img src="img/slider-2.png" alt="slide-1">
                             </div>
                             <div class="portfolio__item">
-                                <img src="img/slider-1.jpg" alt="slide-1">
+                                <img src="img/slider-3.png" alt="slide-1">
                             </div>
                         </div>
                     </div>
                     <div class="portfolio__feature">
                         <div>
                             <h3 class="portfolio__subtitle">City:</h3>
-                            Rostov-on-Don
-                            LCD admiral
+                            <div id="city">Rostov-on-Don LCD admiral</div>
+                            
                         </div>
                         <div>
                             <h3 class="portfolio__subtitle">apartment area:</h3>
-                            81 m2
+                            <div id="area">81 m2</div>
+                            
                         </div>
                         <div>
                             <h3 class="portfolio__subtitle">Repair time:</h3>
-                            3.5 months
+                            <div id="time">3.5 months</div>
                         </div>
                         <div>
                             <h3 class="portfolio__subtitle">Repair Cost:</h3>
-                            Upon request
+                            <div id="cost">Upon request</div>
                         </div>
                     </div>
                     <div class="portfolio__dots">
                         <input type="submit" class="portfolio__arrow portfolio__arrow-left" value="">
                         <div class="portfolio__circles">
-                            <button class="portfolio__dot active-white"></button>
-                            <button class="portfolio__dot"></button>
-                            <button class="portfolio__dot"></button>
+                            <button data-slide-to = "1" class="portfolio__dot active-white"></button>
+                            <button data-slide-to = "2" class="portfolio__dot"></button>
+                            <button data-slide-to = "3" class="portfolio__dot"></button>
                         </div>
                         <input type="submit" class="portfolio__arrow portfolio__arrow-right" value="">
                     </div>
