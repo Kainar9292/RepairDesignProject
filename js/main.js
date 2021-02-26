@@ -57,6 +57,7 @@
       slider.style.position = 'relative';
 
 
+      
       function changeSlides() {
             slidesField.style.transform = `translateX(-${offset}px)`;
 
@@ -80,6 +81,9 @@
       }
 
       next.addEventListener('click', () => {
+            console.log(offset);
+            console.log(deleteStr(width));
+            console.log(deleteStr(width) * (slides.length - 1));
             if (offset == deleteStr(width) * (slides.length - 1)) {
                   offset = 0;
             } else {
