@@ -686,7 +686,7 @@ template {
   grid-row-end: 4;
   -ms-flex-negative: 1;
   flex-shrink: 1;
-  justify-self: end;
+  justify-self: flex-end;
 }
 
 .portfolio__pictures img {
@@ -1587,6 +1587,12 @@ template {
   .portfolio__dots {
     margin-top: 60px;
   }
+
+  .portfolio__pictures {
+    max-width: 520px;
+    max-height: 100%;
+    align-self: auto;
+  }
   .control {
     min-height: 600px;
   }
@@ -1715,9 +1721,16 @@ template {
     margin: 35px 0 75px 0;
   }
   .portfolio__pictures {
-    /* margin: auto; */
+    max-width: 100%;
+    max-height: 100%;
     margin-bottom: 36px;
   }
+
+  /* .portfolio__pictures {
+    max-width: 520px;
+    max-height: 100%;
+    align-self: auto;
+  } */
   .portfolio__subtitle {
     margin: 11px 0;
   }
