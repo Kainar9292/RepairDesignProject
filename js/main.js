@@ -37,9 +37,7 @@
                   time: '3 months',
                   cost: 'Upon request'
             }
-      ]
-
-      console.log(data);
+      ];
 
       let slideIndex = 1,
             offset = 0;
@@ -77,13 +75,10 @@
       }
 
       function deleteStr(str) {
-            return +str.replace(/\D/g, '');
+            return +str.replace(/[a-z]/g, '');
       }
 
       next.addEventListener('click', () => {
-            console.log(offset);
-            console.log(deleteStr(width));
-            console.log(deleteStr(width) * (slides.length - 1));
             if (offset == deleteStr(width) * (slides.length - 1)) {
                   offset = 0;
             } else {
